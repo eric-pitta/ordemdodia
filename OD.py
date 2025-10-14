@@ -1,5 +1,11 @@
 import streamlit as st
 import streamlit.components.v1 as components
+
+# Define o conteúdo HTML da página da Ordem do Dia
+html_content = """
+<!DOCTYPE html>
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,7 +72,6 @@ import streamlit.components.v1 as components
 </head>
 
 <body>
-    <img src="https://logodownload.org/wp-content/uploads/2019/09/prefeitura-rio-de-janeiro-logo-0.png" alt="Logótipo da Prefeitura do Rio de Janeiro" style="width: 300px; margin-bottom: 20px;">
     <h1>Ordem do Dia - Sessão Ordinária 14/10/2025 a 16/10/2025</h1>
 
     <table>
@@ -978,5 +983,4 @@ st.set_page_config(
 # Renderiza o componente HTML
 # O uso de scrolling=True permite que o iframe tenha sua própria barra de rolagem se o conteúdo for maior que a altura.
 components.html(html_content, height=1200, scrolling=True)
-
 
