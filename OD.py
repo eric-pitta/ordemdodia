@@ -13,6 +13,11 @@ html_content = """
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: white !important; /* Força o fundo branco para simular o tema claro */
+            color: black !important; /* Força a cor do texto padrão para preto */
+        }
+        h1 {
+            color: black !important; /* Garante que o título principal seja preto */
         }
         table {
             width: 100%;
@@ -33,6 +38,7 @@ html_content = """
             padding: 8px;
             border: 1px solid #ddd;
             vertical-align: top;
+            color: #333; /* Garante bom contraste para o texto da tabela */
         }
 
         tr:nth-child(even) {
@@ -66,6 +72,7 @@ html_content = """
 </head>
 
 <body>
+    <img src="https://logodownload.org/wp-content/uploads/2019/09/prefeitura-rio-de-janeiro-logo-0.png" alt="Logótipo da Prefeitura do Rio de Janeiro" style="width: 300px; margin-bottom: 20px;">
     <h1>Ordem do Dia - Sessão Ordinária 14/10/2025 a 16/10/2025</h1>
 
     <table>
