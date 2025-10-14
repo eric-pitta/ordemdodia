@@ -1,11 +1,5 @@
 import streamlit as st
 import streamlit.components.v1 as components
-
-# Define o conteúdo HTML da página da Ordem do Dia
-html_content = """
-<!DOCTYPE html>
-<html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -984,4 +978,5 @@ st.set_page_config(
 # Renderiza o componente HTML
 # O uso de scrolling=True permite que o iframe tenha sua própria barra de rolagem se o conteúdo for maior que a altura.
 components.html(html_content, height=1200, scrolling=True)
+
 
