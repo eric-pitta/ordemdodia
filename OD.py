@@ -115,18 +115,7 @@ html_content = """
                 <td><span title="Regulamenta o transporte de passageiros e cargas nas lagoas da AP4, definindo critérios para permissão, cadastramento e operação.">Substitutivo Nº 1</span></td>
             </tr>
 
-            <!-- Projeto 2 -->
-            <tr>
-                <td>2</td>
-                <td>PL</td>
-                <td>2886/2024</td>
-                <td>Dr. Rogério Amorim, Carlos Bolsonaro, Diego Faro</td>
-                <td class="ementa">Inclui a Semana Municipal de Combate ao Aborto no Calendário Oficial</td>
-                <td class="briefing">Semana de 1º a 8 de outubro sobre combate ao aborto</td>
-                <td><span class="contrario">SMS: Contrário. A proposta pode gerar estigma e desinformação, além de interferir em políticas de saúde pública já estabelecidas.</span><span class="novo">NOVO!</span></td>
-                <td><span title="Altera o texto do projeto para 'Combate ao Aborto Ilegal'.">Emenda Nº 1</span></td>
-            </tr>
-
+            
             <!-- Projeto 3 -->
             <tr>
                 <td>3</td>
