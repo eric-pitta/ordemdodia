@@ -13,11 +13,11 @@ html_content = """
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: white !important; /* Força o fundo branco para simular o tema claro */
-            color: black !important; /* Força a cor do texto padrão para preto */
+            background-color: white !important;
+            color: black !important;
         }
         h1 {
-            color: black !important; /* Garante que o título principal seja preto */
+            color: black !important;
         }
         table {
             width: 100%;
@@ -38,7 +38,7 @@ html_content = """
             padding: 8px;
             border: 1px solid #ddd;
             vertical-align: top;
-            color: #333; /* Garante bom contraste para o texto da tabela */
+            color: #333;
         }
 
         tr:nth-child(even) {
@@ -67,6 +67,15 @@ html_content = """
         .briefing {
             font-size: 10px;
             font-style: italic;
+        }
+        .novo {
+            background-color: #ffc107;
+            color: #000;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: bold;
+            margin-left: 5px;
         }
     </style>
 </head>
@@ -103,7 +112,7 @@ html_content = """
                         restringir a livre iniciativa e concorrência.</span><br>
                     SMCG, SMFP, CCPAR: Pendentes
                 </td>
-                <td>Substitutivo Nº 1</td>
+                <td><span title="Regulamenta o transporte de passageiros e cargas nas lagoas da AP4, definindo critérios para permissão, cadastramento e operação.">Substitutivo Nº 1</span></td>
             </tr>
 
             <!-- Projeto 2 -->
@@ -114,8 +123,8 @@ html_content = """
                 <td>Dr. Rogério Amorim, Carlos Bolsonaro, Diego Faro</td>
                 <td class="ementa">Inclui a Semana Municipal de Combate ao Aborto no Calendário Oficial</td>
                 <td class="briefing">Semana de 1º a 8 de outubro sobre combate ao aborto</td>
-                <td>SMS: Pendente</td>
-                <td>Emenda Nº 1</td>
+                <td><span class="contrario">SMS: Contrário. A proposta pode gerar estigma e desinformação, além de interferir em políticas de saúde pública já estabelecidas.</span><span class="novo">NOVO!</span></td>
+                <td><span title="Altera o texto do projeto para 'Combate ao Aborto Ilegal'.">Emenda Nº 1</span></td>
             </tr>
 
             <!-- Projeto 3 -->
@@ -134,7 +143,7 @@ html_content = """
                     <span class="sem-competencia">IPLANRIO: Sem competência</span><br>
                     <span class="favoravel">CCPAR: Nada a opor</span>
                 </td>
-                <td>-</td>
+                <td><span title="Dispõe sobre a implementação e operação do Sistema de Área Azul Digital, estabelece normas para fiscalização, pagamento e utilização, e cria o Fundo Municipal da Área Azul Digital (FMAAD).">Substitutivo Nº 1 <span class="novo">NOVO!</span></span></td>
             </tr>
 
             <!-- Projeto 4 -->
@@ -146,7 +155,7 @@ html_content = """
                 <td class="ementa">Inclui Praça São Lucas e entorno (Vila Cruzeiro) como Polo Gastronômico e Cultural
                 </td>
                 <td class="briefing">Praça São Lucas e entorno como Polo na Lei Geral dos Polos</td>
-                <td>SMC: Pendente</td>
+                <td><span class="favoravel">SMC: Nada a opor</span><span class="novo">NOVO!</span></td>
                 <td>-</td>
             </tr>
 
@@ -165,7 +174,7 @@ html_content = """
                         à LGPD.</span><br>
                     <span class="favoravel">CVL/CIVITAS: Favorável</span>
                 </td>
-                <td>Emenda Nº 1</td>
+                <td><span title="Ajusta os artigos 1º e 3º para clarificar a cessão de imagens mediante convênios específicos.">Emenda Nº 1</span></td>
             </tr>
 
             <!-- Projeto 6 -->
@@ -190,7 +199,8 @@ html_content = """
                 <td class="ementa">Discriminação do destino de multas de trânsito nos documentos de notificação</td>
                 <td class="briefing">Obriga discriminação de onde serão aplicados os recursos de multas de trânsito</td>
                 <td>
-                    SEOP, GM: Pendentes
+                    <span class="contrario">SEOP: Contrário</span><span class="novo">NOVO!</span><br>
+                    GM: Pendente<br>
                     <span class="contrario">SMF: Contrário. A destinação das multas já é prevista no Código de Trânsito
                         Brasileiro. A implementação exigiria adaptação do sistema emissor, gerando aumento de
                         despesas.</span><br>
@@ -216,7 +226,7 @@ html_content = """
                     <span class="sem-competencia">SMAC: Sem competência</span><br>
                     <span class="sem-competencia">SECONSERVA: Sem competência</span>
                 </td>
-                <td>Substitutivo Nº 1<br>Emendas 1 e 2</td>
+                <td><span title="Altera a lei sobre mesas e cadeiras, ajustando regras para ocupação de passeios, afastamentos e vagas de estacionamento em polos gastronômicos.">Substitutivo Nº 1<br>Emendas 1 e 2</span></td>
             </tr>
 
             <!-- Projeto 9 -->
@@ -294,7 +304,13 @@ html_content = """
                     <span class="favoravel">SEOP: Nada a opor</span><br>
                     <span class="favoravel">SEDHIR: Nada a opor</span>
                 </td>
-                <td>-</td>
+                <td>
+                    <span title="Modifica a ementa e o Art. 1º, estabelecendo diretrizes para a atuação integrada de proteção a crianças e adolescentes (RPI).">Emenda Modificativa Nº 1 (CCJ) <span class="novo">NOVO!</span></span><br>
+                    <span title="Modifica o Art. 2º, definindo as atribuições da RPI, como proteger a integridade física e psicológica e apoiar instituições.">Emenda Modificativa Nº 2 (CCJ) <span class="novo">NOVO!</span></span><br>
+                    <span title="Modifica o Art. 3º, prevendo capacitação contínua para os servidores da RPI.">Emenda Modificativa Nº 3 (CCJ) <span class="novo">NOVO!</span></span><br>
+                    <span title="Modifica o Art. 10, determinando providências imediatas em situações de risco.">Emenda Modificativa Nº 4 (CCJ) <span class="novo">NOVO!</span></span><br>
+                    <span title="Suprime os incisos IV, V, e VII do Art. 4º.">Emenda Supressiva Nº 5 (CCJ) <span class="novo">NOVO!</span></span>
+                </td>
             </tr>
 
             <!-- Projeto 13 -->
@@ -305,7 +321,7 @@ html_content = """
                 <td>Rocal</td>
                 <td class="ementa">Cria o bairro Magarça por subdivisão do bairro de Guaratiba (AP5)</td>
                 <td class="briefing">Criação do bairro Magarça na XXVI Região Administrativa</td>
-                <td>SMDU: Pendente</td>
+                <td><span class="contrario">SMDU: Contrário.</span><span class="novo">NOVO!</span><br><span class="sem-competencia">SMI: Sem competência.</span><span class="novo">NOVO!</span></td>
                 <td>-</td>
             </tr>
 
@@ -358,7 +374,7 @@ html_content = """
                         por ferir o princípio da livre iniciativa e concorrência.</span><br>
                     PROCON, SEDECON: Pendentes
                 </td>
-                <td>Emenda Supressiva Nº 1<br>Substitutivo Nº 1</td>
+                <td><span title="A emenda suprime um artigo e o substitutivo inverte a lógica do projeto, proibindo que entregadores sejam obrigados a subir até a porta da unidade, com exceções.">Emenda Supressiva Nº 1<br>Substitutivo Nº 1</span></td>
             </tr>
 
             <!-- Projeto 17 -->
@@ -378,7 +394,7 @@ html_content = """
                         proteção de um bem.</span><br>
                     <span class="sem-competencia">SEDHIR: Sem competência</span>
                 </td>
-                <td>Emenda Modificativa Nº 1</td>
+                <td><span title="Modifica o Art. 4º para incluir como objetos do programa os locais listados no relatório da Comissão Nacional da Verdade.">Emenda Modificativa Nº 1</span></td>
             </tr>
 
             <!-- Projeto 18 -->
@@ -391,7 +407,7 @@ html_content = """
                 </td>
                 <td class="briefing">Parcerias entre Poder Público e sociedade para campos públicos de futebol amador
                 </td>
-                <td>Sem pareceres</td>
+                <td><span class="favoravel">FPJ: Favorável (2018)</span><span class="novo">NOVO!</span><br><span class="sem-competencia">CVL/SUBEL: Sem competência (2018)</span><span class="novo">NOVO!</span></td>
                 <td>-</td>
             </tr>
 
@@ -408,7 +424,7 @@ html_content = """
                     CLF: Pendente<br>
                     <span class="favoravel">SMDEIS: Favorável</span>
                 </td>
-                <td>Emenda Supressiva Nº 1</td>
+                <td><span title="Suprime o Art. 4º do projeto.">Emenda Supressiva Nº 1</span></td>
             </tr>
 
             <!-- Projeto 20 -->
@@ -456,7 +472,7 @@ html_content = """
                     <span class="sem-competencia">GM-RIO: Sem competência</span><br>
                     <span class="favoravel">CET-RIO: Nada a opor</span>
                 </td>
-                <td>Emendas Modificativas 1 a 7</td>
+                <td><span title="Ajustam a redação do projeto, substituindo 'infâncias' por 'crianças', e detalham as diretrizes para mobiliário urbano, calçamento e mitigação de violências.">Emendas Modificativas 1 a 7</span></td>
             </tr>
 
             <!-- Projeto 22 -->
@@ -528,7 +544,7 @@ html_content = """
                 <td class="ementa">Política Municipal de Uso de Canabidiol (PMUC) para fins medicinais</td>
                 <td class="briefing">Dispõe sobre uso medicinal de canabidiol no município</td>
                 <td>SMS: Pendente</td>
-                <td>-</td>
+                <td><span title="Modifica o Art. 5º, estabelecendo que o Poder Executivo regulamentará a Lei.">Emenda Modificativa Nº 1 (CCJ) <span class="novo">NOVO!</span></span></td>
             </tr>
 
             <!-- Projeto 27 -->
@@ -559,7 +575,7 @@ html_content = """
                     <span class="favoravel">RIOTUR: Favorável</span><br>
                     <span class="favoravel">SMTE: Nada a opor</span>
                 </td>
-                <td>-</td>
+                <td><span title="Modifica o caput do Art. 2º, para que a coleta seja realizada pelo órgão competente em parceria com grupos cadastrados.">Emenda Modificativa Nº 1 (CCJ) <span class="novo">NOVO!</span></span></td>
             </tr>
 
             <!-- Projeto 29 -->
@@ -594,7 +610,7 @@ html_content = """
                     SMEL: Pendente<br>
                     SMIT: Sugerida a oitiva do órgão gestor
                 </td>
-                <td>-</td>
+                <td><span title="Modifica o Art. 6º, estabelecendo sanções para o descumprimento da Lei.">Emenda Modificativa Nº 1 (CCJ) <span class="novo">NOVO!</span></span></td>
             </tr>
 
             <!-- Projeto 31 -->
@@ -652,7 +668,7 @@ html_content = """
                     <span class="favoravel">RIOCENTRO: Favorável</span><br>
                     <span class="favoravel">SEDECON: Favorável</span>
                 </td>
-                <td>-</td>
+                <td><span title="Suprime o Art. 3º do Projeto de Lei.">Emenda Supressiva Nº 1 (CCJ) <span class="novo">NOVO!</span></span></td>
             </tr>
 
             <!-- Projeto 35 -->
@@ -668,7 +684,7 @@ html_content = """
                     <span class="sem-competencia">SMIT: Sem competência</span><br>
                     SMAC: Pendente
                 </td>
-                <td>-</td>
+                <td><span title="Modifica o Art. 8º, determinando que o Poder Executivo regulamentará a Lei.">Emenda Modificativa Nº 1 (CCJ) <span class="novo">NOVO!</span></span></td>
             </tr>
 
             <!-- Projeto 36 -->
@@ -700,7 +716,7 @@ html_content = """
                         identificar pessoas com deficiência. Um novo sistema geraria duplicidade e aumento de
                         despesas.</span>
                 </td>
-                <td>-</td>
+                <td><span title="Modifica o Art. 5º, estabelecendo que o Poder Executivo regulamentará a Lei.">Emenda Modificativa Nº 1 (CCJ) <span class="novo">NOVO!</span></span></td>
             </tr>
 
             <!-- Projeto 38 -->
@@ -714,7 +730,11 @@ html_content = """
                 <td><span class="contrario">SME: Desfavorável. A proposta não se alinha à política de educação
                         integral, não é adequada à faixa etária dos alunos (4 a 15 anos) e não está prevista no Currículo
                         Carioca nem na BNCC.</span></td>
-                <td>-</td>
+                <td>
+                    <span title="Suprime os Arts. 5º, 6º e 7º do projeto original.">Emenda Supressiva Nº 1 (CCJ) <span class="novo">NOVO!</span></span><br>
+                    <span title="Suprime os Arts. 5º, 6º e 7º do projeto original.">Emenda Supressiva Nº 2 (CCJ) <span class="novo">NOVO!</span></span><br>
+                    <span title="Suprime os Arts. 5º, 6º e 7º do projeto original.">Emenda Supressiva Nº 3 (CCJ) <span class="novo">NOVO!</span></span>
+                </td>
             </tr>
 
             <!-- Projeto 39 -->
@@ -731,7 +751,7 @@ html_content = """
                     <span class="sem-competencia">SMI: Sem competência</span><br>
                     <span class="sem-competencia">SMDU: Sem competência</span>
                 </td>
-                <td>-</td>
+                <td><span title="Exige que shoppings destinem espaço físico coberto e exclusivo para os entregadores.">Emenda Modificativa Nº 1 (CCJ) <span class="novo">NOVO!</span></span></td>
             </tr>
 
             <!-- Projeto 40 -->
@@ -767,7 +787,10 @@ html_content = """
                         estimativa de impacto financeiro para o desconto no IPTU e possui critérios de difícil
                         fiscalização, o que o torna inexequível.</span>
                 </td>
-                <td>-</td>
+                <td>
+                    <span title="Define que o programa será executado por meio de ações de prevenção e controle de zoonoses.">Emenda Modificativa Nº 1 (CCJ) <span class="novo">NOVO!</span></span><br>
+                    <span title="Suprime o Art. 4º do Projeto de Lei.">Emenda Supressiva Nº 2 (CCJ) <span class="novo">NOVO!</span></span>
+                </td>
             </tr>
 
             <!-- Projeto 42 -->
@@ -784,7 +807,11 @@ html_content = """
                         existentes.</span><br>
                     SEI-RIO, SMPD: Pendentes
                 </td>
-                <td>-</td>
+                <td>
+                    <span title="Suprime o inciso IV do Art. 2º.">Emenda Supressiva Nº 1 (CCJ) <span class="novo">NOVO!</span></span><br>
+                    <span title="Suprime o Art. 5º da proposição.">Emenda Supressiva Nº 2 (CCJ) <span class="novo">NOVO!</span></span><br>
+                    <span title="Detalha que a capacitação ocorrerá de forma modular e acessível.">Emenda Modificativa Nº 3 (CCJ) <span class="novo">NOVO!</span></span>
+                </td>
             </tr>
 
             <!-- Projeto 43 -->
@@ -801,7 +828,7 @@ html_content = """
                     <span class="sem-competencia">S/SUBPDEC: Sem competência</span><br>
                     SMAC: Pendente
                 </td>
-                <td>-</td>
+                <td><span title="Autoriza o Poder Executivo a promover a poda/supressão em imóveis do CadÚnico, mediante laudo técnico.">Emenda Modificativa Nº 1 (CCJ) <span class="novo">NOVO!</span></span></td>
             </tr>
 
             <!-- Projeto 44 -->
