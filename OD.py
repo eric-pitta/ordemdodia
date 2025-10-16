@@ -127,6 +127,7 @@ html_content = """
                 <td class="briefing">Sistema digital para fiscalização e cobrança de estacionamento com reconhecimento
                     de placas e GPS</td>
                 <td>
+                    <span class="contrario">SMF (Substitutivo):  Contrário. Gera aumento de despesa e invade competência do Executivo Municipal, criando inclusive Fundo Municipal, a ser melhor esclarecido pela PGM.rário</span><span class="novo">NOVO!</span><br>
                     <span class="sem-competencia">SMTR: Sem competência</span><br>
                     <span class="sem-competencia">CET-RIO: Sem competência</span><br>
                     <span class="favoravel">SEOP: Nada a opor</span><br>
