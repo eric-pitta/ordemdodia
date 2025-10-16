@@ -110,6 +110,7 @@ html_content = """
                     <span class="sem-competencia">SMTR: Sem competência (sugere CCPAR)</span><br>
                     <span class="favoravel">SMDUE: Favorável com sugestão de revisão dos arts. 3º e 7º para não
                         restringir a livre iniciativa e concorrência.</span><br>
+                    <span class="sem-competencia">SMDU (substitutivo): Sem competência.</span><span class="novo">NOVO!</span><br>
                     SMCG, SMFP, CCPAR: Pendentes
                 </td>
                 <td><span title="Regulamenta o transporte de passageiros e cargas nas lagoas da AP4, definindo critérios para permissão, cadastramento e operação.">Substitutivo Nº 1</span></td>
@@ -130,7 +131,8 @@ html_content = """
                     <span class="sem-competencia">CET-RIO: Sem competência</span><br>
                     <span class="favoravel">SEOP: Nada a opor</span><br>
                     <span class="sem-competencia">IPLANRIO: Sem competência</span><br>
-                    <span class="favoravel">CCPAR: Nada a opor</span>
+                    <span class="favoravel">CCPAR: Nada a opor</span><br>
+                    <span class="sem-competencia">SMDU (substitutivo): Sem competência.</span><span class="novo">NOVO!</span>
                 </td>
                 <td><span title="Dispõe sobre a implementação e operação do Sistema de Área Azul Digital, estabelece normas para fiscalização, pagamento e utilização, e cria o Fundo Municipal da Área Azul Digital (FMAAD).">Substitutivo Nº 1 <span class="novo">NOVO!</span></span></td>
             </tr>
@@ -999,4 +1001,3 @@ st.set_page_config(
 # Renderiza o componente HTML
 # O uso de scrolling=True permite que o iframe tenha sua própria barra de rolagem se o conteúdo for maior que a altura.
 components.html(html_content, height=1200, scrolling=True)
-
