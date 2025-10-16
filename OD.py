@@ -89,10 +89,12 @@ html_content = """
                 <th style="width: 3%;">Nº</th>
                 <th style="width: 5%;">Tipo</th>
                 <th style="width: 7%;">Nº/Ano</th>
-                <th style="width: 15%;">Autor</th>
-                <th style="width: 20%;">Ementa</th>
-                <th style="width: 20%;">Briefing</th>
-                <th style="width: 20%;">Pareceres dos Órgãos</th>
+                <th style="width: 5%;">Quórum</th>
+                <th style="width: 5%;">Discussão</th>
+                <th style="width: 13%;">Autor</th>
+                <th style="width: 18%;">Ementa</th>
+                <th style="width: 18%;">Briefing</th>
+                <th style="width: 16%;">Pareceres dos Órgãos</th>
                 <th style="width: 10%;">Emendas/Substitutivos</th>
             </tr>
         </thead>
@@ -102,6 +104,8 @@ html_content = """
                 <td>1</td>
                 <td>PLC</td>
                 <td>164/2024</td>
+                <td>MA</td>
+                <td>2ª</td>
                 <td>Carlo Caiado e outros.</td>
                 <td class="ementa">Dispõe sobre a regulamentação da atividade econômica através transporte de
                     passageiros na Lagoa da Tijuca, Canal de Marapendi e Canal da Barra</td>
@@ -122,6 +126,8 @@ html_content = """
                 <td>3</td>
                 <td>PL</td>
                 <td>156/2025</td>
+                <td>MS</td>
+                <td>2ª</td>
                 <td>Marcelo Diniz et al.</td>
                 <td class="ementa">Fiscalização digital da cobrança de vagas de estacionamento em vias públicas</td>
                 <td class="briefing">Sistema digital para fiscalização e cobrança de estacionamento com reconhecimento
@@ -143,6 +149,8 @@ html_content = """
                 <td>4</td>
                 <td>PL</td>
                 <td>573/2025</td>
+                <td>MA</td>
+                <td>2ª</td>
                 <td>Tânia Bastos</td>
                 <td class="ementa">Inclui Praça São Lucas e entorno (Vila Cruzeiro) como Polo Gastronômico e Cultural
                 </td>
@@ -156,6 +164,8 @@ html_content = """
                 <td>5</td>
                 <td>PL</td>
                 <td>3260-A/2024</td>
+                <td>MS</td>
+                <td>2ª</td>
                 <td>Carlo Caiado</td>
                 <td class="ementa">Instalação de câmeras de monitoramento em vias públicas por particulares</td>
                 <td class="briefing">Normas para instalação de câmeras e cessão de imagens ao COR-Rio, CIVITAS e SESP
@@ -174,6 +184,8 @@ html_content = """
                 <td>6</td>
                 <td>PL</td>
                 <td>197/2025</td>
+                <td>MA</td>
+                <td>2ª</td>
                 <td>Wagner Tavares</td>
                 <td class="ementa">Inclui São Bento como Polo Gastronômico, Turístico e Cultural</td>
                 <td class="briefing">Estrada do Galeão (5275-5344), Rua Praia do Belo Jardim e Av. Dezessete como Polo
@@ -187,6 +199,8 @@ html_content = """
                 <td>7</td>
                 <td>PL</td>
                 <td>1613/2019</td>
+                <td>MS</td>
+                <td>2ª</td>
                 <td>Junior da Lucinha</td>
                 <td class="ementa">Discriminação do destino de multas de trânsito nos documentos de notificação</td>
                 <td class="briefing">Obriga discriminação de onde serão aplicados os recursos de multas de trânsito</td>
@@ -205,6 +219,8 @@ html_content = """
                 <td>8</td>
                 <td>PLC</td>
                 <td>25/2021</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Rafael Aloisio Freitas</td>
                 <td class="ementa">Altera Lei Complementar nº 226/2020 sobre mesas e cadeiras em áreas públicas</td>
                 <td class="briefing">Alterações na regulamentação de mesas e cadeiras em espaços públicos e afastamento
@@ -226,6 +242,8 @@ html_content = """
                 <td>9</td>
                 <td>PLC</td>
                 <td>176/2024</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Marcio Ribeiro</td>
                 <td class="ementa">Altera redação sobre número máximo de táxis (1 para cada 180 habitantes)</td>
                 <td class="briefing">Proporcionalidade de 1 veículo táxi para cada 180 habitantes</td>
@@ -240,6 +258,8 @@ html_content = """
                 <td>10</td>
                 <td>PLC</td>
                 <td>16/2025</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Talita Galhardo, Pedro Duarte</td>
                 <td class="ementa">Proíbe contratação de shows/eventos infantojuvenis com apologia ao crime/drogas</td>
                 <td class="briefing">Veda contratação pública de eventos com expressão de apologia ao crime ou drogas
@@ -261,6 +281,8 @@ html_content = """
                 <td>11</td>
                 <td>PLC</td>
                 <td>23/2025</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Carlo Caiado et al.</td>
                 <td class="ementa">Regulamenta intervenção do Poder Executivo em imóveis com risco estrutural</td>
                 <td class="briefing">Define critérios de intervenção em imóveis particulares conforme art. 284 da LC
@@ -283,6 +305,8 @@ html_content = """
                 <td>12</td>
                 <td>PLC</td>
                 <td>27/2025</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Leniel Borel</td>
                 <td class="ementa">Cria Ronda de Proteção à Infância (RPI) para policiamento ostensivo</td>
                 <td class="briefing">RPI para policiamento ostensivo diante de condutas lesivas a crianças e
@@ -310,6 +334,8 @@ html_content = """
                 <td>13</td>
                 <td>PLC</td>
                 <td>42/2025</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Rocal</td>
                 <td class="ementa">Cria o bairro Magarça por subdivisão do bairro de Guaratiba (AP5)</td>
                 <td class="briefing">Criação do bairro Magarça na XXVI Região Administrativa</td>
@@ -322,6 +348,8 @@ html_content = """
                 <td>14</td>
                 <td>PLC</td>
                 <td>49/2025</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Pedro Duarte</td>
                 <td class="ementa">Altera § 5º do art. 371 da LC 270/2024 sobre grupamentos de interesse social</td>
                 <td class="briefing">Excepciona normas menos restritivas para grupamentos habitacionais de interesse
@@ -339,6 +367,8 @@ html_content = """
                 <td>15</td>
                 <td>PL</td>
                 <td>1128/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Diego Faro et al.</td>
                 <td class="ementa">Política Municipal de Conscientização e Combate à Adultização e Sexualização Infantil
                 </td>
@@ -357,6 +387,8 @@ html_content = """
                 <td>16</td>
                 <td>PL</td>
                 <td>2906/2024</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Felipe Michel</td>
                 <td class="ementa">Obriga apps de entrega a fornecer opção de entrega na porta da unidade</td>
                 <td class="briefing">Aplicativos devem disponibilizar escolha entre entrega na portaria ou na porta da
@@ -374,6 +406,8 @@ html_content = """
                 <td>17</td>
                 <td>PL</td>
                 <td>437/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Maíra do MST, Monica Benicio</td>
                 <td class="ementa">Programa Memória, Verdade e Justiça Carioca - identificação de locais de repressão da
                     ditadura</td>
@@ -394,6 +428,8 @@ html_content = """
                 <td>18</td>
                 <td>PL</td>
                 <td>748/2018</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Jair da Mendes Gomes</td>
                 <td class="ementa">Programa Adote um Campo para implantação, reforma e manutenção de campos de futebol
                 </td>
@@ -408,6 +444,8 @@ html_content = """
                 <td>19</td>
                 <td>PL</td>
                 <td>2069/2023</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Cesar Maia</td>
                 <td class="ementa">Obrigação acessória em unidades comerciais do Município</td>
                 <td class="briefing">Garantir acesso a informações sobre exercício de atividades econômicas</td>
@@ -424,6 +462,8 @@ html_content = """
                 <td>20</td>
                 <td>PL</td>
                 <td>2626/2023</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Vera Lins</td>
                 <td class="ementa">Instalação de hidrômetros no interior dos imóveis pelas concessionárias</td>
                 <td class="briefing">Hidrômetros devem ser instalados dentro dos imóveis, vedada instalação em calçadas
@@ -443,6 +483,8 @@ html_content = """
                 <td>21</td>
                 <td>PL</td>
                 <td>2783/2024</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Thais Ferreira</td>
                 <td class="ementa">Diretrizes para caminhabilidade segura de infâncias, mulheres e pessoas cuidadoras
                 </td>
@@ -472,6 +514,8 @@ html_content = """
                 <td>22</td>
                 <td>PL</td>
                 <td>2931/2024</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Luciana Novaes</td>
                 <td class="ementa">Direito ao acompanhamento para idosos e PcDs em consultas e exames</td>
                 <td class="briefing">Presença de acompanhante para idosos e PcDs em estabelecimentos de saúde</td>
@@ -489,6 +533,8 @@ html_content = """
                 <td>23</td>
                 <td>PL</td>
                 <td>3195/2024</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Zico</td>
                 <td class="ementa">Inclui Praça João Petini (Campo Grande) como Polo Gastronômico e Cultural</td>
                 <td class="briefing">Praça na Rua Mauro de Almeida - Figueira como Polo</td>
@@ -501,6 +547,8 @@ html_content = """
                 <td>24</td>
                 <td>PL</td>
                 <td>3210/2024</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>William Siri</td>
                 <td class="ementa">Selo Empresa Amiga do Trabalhador Migrante e Refugiado</td>
                 <td class="briefing">Reconhecimento a empresas que incentivam contratação de migrantes e refugiados</td>
@@ -517,6 +565,8 @@ html_content = """
                 <td>25</td>
                 <td>PL</td>
                 <td>3403/2024</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Monica Benicio</td>
                 <td class="ementa">Considera Parada do Orgulho LGBTI+ de interesse cultural, social e histórico</td>
                 <td class="briefing">Reconhecimento da Parada LGBTI+ realizada anualmente no Rio</td>
@@ -532,6 +582,8 @@ html_content = """
                 <td>26</td>
                 <td>PL</td>
                 <td>48/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Paulo Messina</td>
                 <td class="ementa">Política Municipal de Uso de Canabidiol (PMUC) para fins medicinais</td>
                 <td class="briefing">Dispõe sobre uso medicinal de canabidiol no município</td>
@@ -544,6 +596,8 @@ html_content = """
                 <td>27</td>
                 <td>PL</td>
                 <td>74/2025</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Átila Nunes</td>
                 <td class="ementa">Altera Lei 7.008/2021 sobre Circuito Carioca de Economia Solidária</td>
                 <td class="briefing">Alterações em dispositivos sobre implantação e gestão do Circuito</td>
@@ -556,6 +610,8 @@ html_content = """
                 <td>28</td>
                 <td>PL</td>
                 <td>103/2025</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Salvino Oliveira</td>
                 <td class="ementa">Programa Recicla Rio - incentivos à coleta de lixo no Carnaval</td>
                 <td class="briefing">Destinação de resíduos coletados no Carnaval a grupos cadastrados</td>
@@ -575,6 +631,8 @@ html_content = """
                 <td>29</td>
                 <td>PL</td>
                 <td>119/2025</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Jorge Canella</td>
                 <td class="ementa">Veda parceria/patrocínio de empresas inadimplentes em eventos públicos</td>
                 <td class="briefing">Proíbe empresas devedoras de tributos municipais de patrocinar eventos públicos
@@ -595,6 +653,8 @@ html_content = """
                 <td>30</td>
                 <td>PL</td>
                 <td>133/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Fernando Armelau</td>
                 <td class="ementa">Portal do Legado Olímpico para gestão dos equipamentos olímpicos</td>
                 <td class="briefing">Plataforma digital para divulgação de gestão, utilização e manutenção</td>
@@ -610,6 +670,8 @@ html_content = """
                 <td>31</td>
                 <td>PL</td>
                 <td>181/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Talita Galhardo</td>
                 <td class="ementa">Internação compulsória de usuários de drogas</td>
                 <td class="briefing">Poder Público deve internar compulsoriamente usuários em situação deteriorante</td>
@@ -627,6 +689,8 @@ html_content = """
                 <td>32</td>
                 <td>PL</td>
                 <td>191/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Tânia Bastos</td>
                 <td class="ementa">Programa de Orientação, Predição e Prevenção à Pré-eclâmpsia</td>
                 <td class="briefing">Reduzir incidência de pré-eclâmpsia entre gestantes na rede municipal</td>
@@ -639,6 +703,8 @@ html_content = """
                 <td>33</td>
                 <td>PL</td>
                 <td>208/2025</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Wagner Tavares</td>
                 <td class="ementa">Inclui Aterro do Cocotá como Polo Gastronômico, Turístico e Cultural</td>
                 <td class="briefing">Ruas Capitão Barbosa, Praia da Bandeira e Praia de Olaria como Polo</td>
@@ -651,6 +717,8 @@ html_content = """
                 <td>34</td>
                 <td>PL</td>
                 <td>264/2025</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Felipe Pires</td>
                 <td class="ementa">Permite entrada de bebidas e alimentos em eventos patrocinados pela Prefeitura</td>
                 <td class="briefing">Eventos municipais não podem vedar entrada de bebidas/alimentos para consumo
@@ -668,6 +736,8 @@ html_content = """
                 <td>35</td>
                 <td>PL</td>
                 <td>281/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Vitor Hugo</td>
                 <td class="ementa">Política de acesso à informação sobre compensações ambientais de cortes de árvores
                 </td>
@@ -684,6 +754,8 @@ html_content = """
                 <td>36</td>
                 <td>PL</td>
                 <td>283/2025</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Felipe Boró</td>
                 <td class="ementa">Inclui Praça dos Salmos (Bangu) como Polo Gastronômico e Cultural</td>
                 <td class="briefing">Praça dos Salmos em Bangu como Polo</td>
@@ -696,6 +768,8 @@ html_content = """
                 <td>37</td>
                 <td>PL</td>
                 <td>295/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Fabio Silva</td>
                 <td class="ementa">Cadastro Municipal de Crianças Atípicas</td>
                 <td class="briefing">Cadastro para crianças com TEA e outras deficiências neurológicas</td>
@@ -716,6 +790,8 @@ html_content = """
                 <td>38</td>
                 <td>PL</td>
                 <td>359/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Rick Azevedo</td>
                 <td class="ementa">Ensino extracurricular de Noções de Direito do Trabalho nas escolas municipais</td>
                 <td class="briefing">Atividade extracurricular sobre direito do trabalho na rede municipal</td>
@@ -734,6 +810,8 @@ html_content = """
                 <td>39</td>
                 <td>PL</td>
                 <td>370/2025</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Marcelo Diniz</td>
                 <td class="ementa">Responsabilidade urbanística de shoppings sobre impacto de delivery</td>
                 <td class="briefing">Shoppings respondem por impactos na vizinhança dos serviços de entrega por app</td>
@@ -751,6 +829,8 @@ html_content = """
                 <td>40</td>
                 <td>PL</td>
                 <td>389/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Gigi Castilho</td>
                 <td class="ementa">Sala Lilás nos CRAS para atendimento a mulheres em situação de violência</td>
                 <td class="briefing">Espaço de acolhimento para mulheres vítimas de violência doméstica nos CRAS</td>
@@ -769,6 +849,8 @@ html_content = """
                 <td>41</td>
                 <td>PL</td>
                 <td>439/2025</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Rodrigo Vizeu</td>
                 <td class="ementa">Programa de Benefício à Adoção Responsável de Cães e Gatos</td>
                 <td class="briefing">Incentivos à adoção responsável de animais em vulnerabilidade</td>
@@ -790,6 +872,8 @@ html_content = """
                 <td>42</td>
                 <td>PL</td>
                 <td>478/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Marcos Dias</td>
                 <td class="ementa">Programa Escola Amiga do Autista baseado em ABA</td>
                 <td class="briefing">Inclusão de estudantes com TEA com base em Análise do Comportamento Aplicada</td>
@@ -811,6 +895,8 @@ html_content = """
                 <td>43</td>
                 <td>PL</td>
                 <td>556/2025</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Flavio Pato</td>
                 <td class="ementa">Supressão/poda de árvores em risco em imóveis de pessoas do CadÚnico</td>
                 <td class="briefing">Município pode realizar poda/supressão em imóveis de cadastrados no CadÚnico</td>
@@ -828,6 +914,8 @@ html_content = """
                 <td>44</td>
                 <td>PL</td>
                 <td>580/2025</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Dr. Gilberto</td>
                 <td class="ementa">Exigência de certidão criminal e laudo toxicológico de servidores que atuam com
                     crianças</td>
@@ -848,6 +936,8 @@ html_content = """
                 <td>45</td>
                 <td>PL</td>
                 <td>592/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Willian Coelho</td>
                 <td class="ementa">Inclui Encontro Anual Sepevolks no Calendário Oficial</td>
                 <td class="briefing">Evento anual no mês de junho</td>
@@ -860,6 +950,8 @@ html_content = """
                 <td>46</td>
                 <td>PL</td>
                 <td>600/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Carlos Bolsonaro</td>
                 <td class="ementa">Nomeia escolas como Gilbert K. Chesterton, C.S. Lewis e J.R.R. Tolkien</td>
                 <td class="briefing">Três escolas inominadas receberão nomes dos autores</td>
@@ -875,6 +967,8 @@ html_content = """
                 <td>47</td>
                 <td>PL</td>
                 <td>608/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Diego Faro</td>
                 <td class="ementa">Dia Municipal da Adoção Espiritual no Calendário Oficial</td>
                 <td class="briefing">8 de outubro como Dia da Adoção Espiritual</td>
@@ -890,6 +984,8 @@ html_content = """
                 <td>48</td>
                 <td>PL</td>
                 <td>641/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Helena Vieira</td>
                 <td class="ementa">Incentivo financeiro-educacional "Pezinho de Meia" (poupança) para estudantes</td>
                 <td class="briefing">Poupança para alunos de baixa renda do 7º ao 9º ano do ensino fundamental</td>
@@ -906,6 +1002,8 @@ html_content = """
                 <td>49</td>
                 <td>PL</td>
                 <td>679/2025</td>
+                <td>MA</td>
+                <td>1ª</td>
                 <td>Talita Galhardo</td>
                 <td class="ementa">Obriga academias a ter convênio com clínica/médico para exames</td>
                 <td class="briefing">Academias devem ter convênio para realização de exames periódicos e de matrícula
@@ -923,6 +1021,8 @@ html_content = """
                 <td>50</td>
                 <td>PL</td>
                 <td>794/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Dr. Rogério Amorim</td>
                 <td class="ementa">Remissão e anistia de créditos tributários de cartórios (ISS subitem 21.01)</td>
                 <td class="briefing">Remissão de ISS de cartórios com fatos geradores até setembro/2013</td>
@@ -940,6 +1040,8 @@ html_content = """
                 <td>51</td>
                 <td>PL</td>
                 <td>801/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Leonel de Esquerda</td>
                 <td class="ementa">Declara patrimônio cultural imaterial os trabalhadores ambulantes das praias/orla
                 </td>
@@ -959,6 +1061,8 @@ html_content = """
                 <td>52</td>
                 <td>PL</td>
                 <td>840/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Rosa Fernandes</td>
                 <td class="ementa">Campanha de Prevenção ao Bullying e Cyberbullying no Calendário Oficial</td>
                 <td class="briefing">Semana de 7 de abril - Dia Nacional de Combate ao Bullying</td>
@@ -974,6 +1078,8 @@ html_content = """
                 <td>53</td>
                 <td>PL</td>
                 <td>1032/2025</td>
+                <td>MS</td>
+                <td>1ª</td>
                 <td>Deangeles Percy</td>
                 <td class="ementa">Inclui Instituto Libertas como utilidade pública</td>
                 <td class="briefing">Instituto Internacional para Bispos, Pastores e Ministros Evangélicos</td>
@@ -1002,3 +1108,4 @@ st.set_page_config(
 # Renderiza o componente HTML
 # O uso de scrolling=True permite que o iframe tenha sua própria barra de rolagem se o conteúdo for maior que a altura.
 components.html(html_content, height=1200, scrolling=True)
+
